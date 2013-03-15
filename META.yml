@@ -1,0 +1,35 @@
+---
+abstract: 'An event based IRC protocol server API'
+author:
+  - unknown
+build_requires:
+  Module::Build::Pluggable::CPANfile: 0.02
+  Test::More: 0.98
+  Test::Requires: 0
+  Test::TCP: 0
+configure_requires:
+  Module::Build: 0.38
+  Module::Build::Pluggable: 0
+  Module::Build::Pluggable::CPANfile: 0.02
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: AnyEvent-IRC-Server
+no_index:
+  directory:
+    - inc
+provides:
+  AnyEvent::IRC::Server:
+    file: lib/AnyEvent/IRC/Server.pm
+    version: 0.02
+requires:
+  AnyEvent::IRC: 0
+  Class::Accessor::Fast: 0
+  Object::Event: 0
+  perl: 5.008005
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.02
