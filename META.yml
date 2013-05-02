@@ -1,18 +1,19 @@
 ---
 abstract: 'An event based IRC protocol server API'
 author:
-  - unknown
+  - 'Kan Fushihara <default {at} example.com>'
 build_requires:
-  Module::Build::Pluggable::CPANfile: 0.02
   Test::More: 0.98
   Test::Requires: 0
   Test::TCP: 0
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
   Module::Build::Pluggable: 0
-  Module::Build::Pluggable::CPANfile: 0.02
+  Module::Build::Pluggable::CPANfile: 0
 dynamic_config: 0
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Minilla/v0.3.0, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,16 +21,29 @@ meta-spec:
 name: AnyEvent-IRC-Server
 no_index:
   directory:
+    - t
+    - xt
     - inc
+    - share
+    - eg
+    - examples
+    - author
 provides:
   AnyEvent::IRC::Server:
     file: lib/AnyEvent/IRC/Server.pm
-    version: 0.02
+    version: 0.03
 requires:
   AnyEvent::IRC: 0
-  Class::Accessor::Fast: 0
+  Class::Accessor::Lite: 0
   Object::Event: 0
-  perl: 5.008005
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.02
+  bugtracker: https://github.com/kan/p5-anyevent-irc-server/issues
+  homepage: https://github.com/kan/p5-anyevent-irc-server
+  repository: git://github.com/kan/p5-anyevent-irc-server.git
+version: 0.03
+x_contributors:
+  - 'Kan Fushihara <kan@mobilefactory.jp>'
+  - 'Kan Fushihara <kan@edf3.(none)>'
+  - 'Kazuhiro Osawa <yappo@shibuya.pl>'
+  - 'tokuhirom <tokuhirom@gmail.com>'
+  - 'Kan Fushihara <kan.fushihara@gmail.com>'
